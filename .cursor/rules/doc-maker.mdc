@@ -1,0 +1,46 @@
+---
+description: Documentation Maker — AI-assisted documentation system
+globs: ["**/*"]
+alwaysApply: true
+---
+
+# Documentation Maker
+
+This project uses **Documentation Maker** to keep auto-generated, commit-tracked docs up to date.
+
+## Where docs live
+
+```
+code-docs/
+├── structure/
+│   ├── file-structure.md   ← project folder layout and purposes
+│   └── dependencies.md     ← import/dependency graph
+└── files/                  ← one .md per source file
+    └── <path__with__underscores>.md
+```
+
+## How to help as an AI agent
+
+- **Explaining a file** → read `code-docs/files/<path>.md` first; it has context and change history.
+- **After editing a file** → suggest updating its doc in `code-docs/files/` if the change is significant.
+- **New file with no doc** → generate one using the format from existing docs in `code-docs/files/`.
+- **Project structure questions** → read `code-docs/structure/file-structure.md`.
+
+## Per-file doc format
+
+Every file doc ends with a change history table — **append rows, never delete them**:
+
+```markdown
+## Change History
+
+| Commit   | Date       | What Changed                          |
+|----------|------------|---------------------------------------|
+| abc1234  | 2026-06-05 | Added OAuth flow, removed legacy token |
+```
+
+## Keyboard shortcuts
+
+| Action        | Windows / Linux     | Mac                 |
+|---------------|---------------------|---------------------|
+| Initial setup | Ctrl+Alt+D I        | Cmd+Alt+D I         |
+| Update docs   | Ctrl+Alt+D U        | Cmd+Alt+D U         |
