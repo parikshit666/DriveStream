@@ -2,6 +2,10 @@
 
 A robust Node.js script that automates the process of downloading videos from various platforms (YouTube, Vimeo, etc.) and direct URLs, then uploading them directly to a specific Google Drive folder.
 
+## 🎬 Demo
+
+<!-- Drop your project demo video here -->
+
 ## 🚀 Features
 
 - **Bulk Processing**: Reads multiple URLs from a `videos.csv` file.
@@ -89,6 +93,10 @@ node app.js
     - If `yt-dlp` fails (for non-video links), it falls back to `axios` to get a file stream.
 5.  **Uploading**: The stream is piped directly to the Google Drive API's `files.create` method, targeted at your `FOLDER_ID`.
 6.  **Progress**: The `cli-progress` bar updates in real-time as bytes are transferred.
+
+## 💡 Pro-Tip: Extracting Direct URLs
+
+If a direct URL from the browser's address bar doesn't work (e.g., for embedded players), you can use the [DownloadHelper](https://www.downloadhelper.net/) Chrome extension to extract the actual video source URL. Once the extension detects the video, copy the "Media Link" and add it to your `videos.csv`.
 
 ## ⚠️ Troubleshooting
 
