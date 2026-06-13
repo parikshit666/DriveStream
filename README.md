@@ -5,7 +5,7 @@ A robust Node.js script that automates the process of downloading videos from va
 
 ## 🎬 Demo
 
-https://github.com/user-attachments/assets/c77700b9-c481-4365-a0ea-921b25427b17
+https://github.com/user-attachments/assets/02ab1913-7c12-4a68-8af4-992f958ac8d6
 
 ## 🚀 Features
 
