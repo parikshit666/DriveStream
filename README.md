@@ -30,7 +30,7 @@ Before running the script, ensure you have the following installed:
 2.  **npm** (Node Package Manager)
 3.  **yt-dlp**: Must be installed and accessible in your system's PATH.
     - [yt-dlp Installation Guide](https://github.com/yt-dlp/yt-dlp#installation)
-4.  **Google Cloud Project**: You need a project with the **Google Drive API** enabled and OAuth 2.0 credentials.
+4.  **Google Cloud Project**: You need a project with the **Google Drive API** enabled and OAuth 2.0 credentials (ref: https://www.youtube.com/watch?v=1y0-IfRW114).
 
 ## 🛠️ Setup
 
